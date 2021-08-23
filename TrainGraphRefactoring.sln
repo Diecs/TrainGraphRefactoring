@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainGraphModel", "TrainGraphModel\TrainGraphModel.csproj", "{77B60816-7AA0-4B9F-A8A0-BED1B32F276B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainGraphModelTests", "TrainGraphModelTests\TrainGraphModelTests.csproj", "{FD910D26-4C83-4329-A111-9F3B275C0AAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77B60816-7AA0-4B9F-A8A0-BED1B32F276B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B60816-7AA0-4B9F-A8A0-BED1B32F276B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B60816-7AA0-4B9F-A8A0-BED1B32F276B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B60816-7AA0-4B9F-A8A0-BED1B32F276B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD910D26-4C83-4329-A111-9F3B275C0AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD910D26-4C83-4329-A111-9F3B275C0AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD910D26-4C83-4329-A111-9F3B275C0AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD910D26-4C83-4329-A111-9F3B275C0AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EAA44BC-D188-4643-972C-22BA5C6CFD20}
+	EndGlobalSection
+EndGlobal
