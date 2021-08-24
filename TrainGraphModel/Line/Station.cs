@@ -30,6 +30,11 @@ namespace TrainGraphModel.Line
         /// </summary>
         public StationType StationType { get; }
 
+        private List<StopArea> transferTrackStopAreas;
+        /// <summary>
+        /// 车辆段转换轨停车区域列表
+        /// </summary>
+        public IReadOnlyList<StopArea> TransferTrackStopAreas => transferTrackStopAreas;
         /// <summary>
         /// 获得停车区域列表
         /// </summary>
@@ -46,12 +51,13 @@ namespace TrainGraphModel.Line
 
         #endregion
 
-        public Station(ushort id,string name,StationType stationType,List<StopArea> stopAreas)
+        public Station(ushort id,string name,StationType stationType, List<StopArea> transferTrackStopAreas, List<StopArea> stopAreas)
             :base(stopAreas)
         {
             ID = id;
             Name = name;
             StationType = stationType;
+            this.transferTrackStopAreas = transferTrackStopAreas;
         }
 
         public static int SortByKiloAsc(Station objA, Station objB)

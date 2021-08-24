@@ -81,7 +81,16 @@ namespace TrainGraphModel.Line
                     var stopArea = stopAreaManager.Get(xmlStopArea.ID);
                     stopAreas.Add(stopArea);
                 }
-                Station station = new Station(xmlStation.ID, xmlStation.Name, stationType,stopAreas);
+                List<StopArea> transferTrackStopAreas = new List<StopArea>();
+                if (xmlStation.TrackStopAreas != null && xmlStation.TrackStopAreas.Length != 0)
+                {
+                    foreach (var xmlStopArea in xmlStation.TrackStopAreas)
+                    {
+                        var stopArea = stopAreaManager.Get(xmlStopArea.ID);
+                        transferTrackStopAreas.Add(stopArea);
+                    }
+                }
+                Station station = new Station(xmlStation.ID, xmlStation.Name, stationType,transferTrackStopAreas,stopAreas);
                 stations.Add(station);
             }
             stationManager = new StationManager(stations);

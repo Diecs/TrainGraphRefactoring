@@ -8,7 +8,7 @@ namespace TrainGraphModel.Comom
     /// 只读的父亲类
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public abstract class ReadOnlyParentBase<T>:IEnumerable<T>
+    public abstract class ReadOnlyParentBase<T> : IEnumerable<T>
         where T:ISon
     {
         List<T> sons = new List<T>();
