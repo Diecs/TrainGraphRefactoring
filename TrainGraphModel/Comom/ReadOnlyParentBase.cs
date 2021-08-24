@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 
 namespace TrainGraphModel.Comom
@@ -8,7 +7,7 @@ namespace TrainGraphModel.Comom
     /// 只读的父亲类
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public abstract class ReadOnlyParentBase<T> : IEnumerable<T>
+    public abstract class ReadOnlyParentBase<T> : IParent<T>
         where T:ISon
     {
         List<T> sons = new List<T>();
@@ -41,11 +40,6 @@ namespace TrainGraphModel.Comom
         {
             return ((IEnumerable)sons).GetEnumerator();
         }
-    }
-
-    public interface ISon
-    {
-        Object Parent { get; set; }
     }
 
 }
